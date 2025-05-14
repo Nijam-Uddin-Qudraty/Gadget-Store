@@ -1,9 +1,12 @@
 import React from 'react';
+import Banner from '../Header/Banner';
+import Gadget_Section from '../Gadget/Gadget_Section';
 
 const Home = () => {
     return (
         <>
-            <h1>home</h1>
+            <Banner />
+            <Gadget_Section />
         </>
     );
 };

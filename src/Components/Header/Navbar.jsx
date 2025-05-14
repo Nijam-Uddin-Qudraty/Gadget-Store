@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoCartOutline } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
-import { NavLink } from 'react-router';
+import { NavLink} from 'react-router';
 const Navbar = () => {
   const links = <>
     <NavLink to="/">Home</NavLink>
@@ -9,8 +9,10 @@ const Navbar = () => {
     <NavLink to="/dashboard">Dashboard</NavLink>
 
   </>
+  // const location = useLocation();
+  // console.log( location.pathname);
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar max-w-5/6 mx-auto bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,10 +24,10 @@ const Navbar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+    <NavLink to={"/"} className="btn btn-ghost text-xl">Gadget Heaven</NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal gap-12 px-1">
+    <ul className="menu menu-horizontal gap-4 px-1">
       {links}
     </ul>
   </div>
