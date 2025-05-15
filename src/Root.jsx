@@ -1,12 +1,19 @@
-import { Outlet } from 'react-router';
+import { Outlet, useLoaderData } from 'react-router';
 import Navbar from './Components/Header/Navbar.jsx';
-import React from 'react';
+import { createContext, useContext } from 'react';
+// import React, { createContext, useEffect, useState } from 'react';
+export  const apiContext = createContext("data");
 
 const Root = () => {
+  // const [gadgets, setGadgets] = useState([]);
+  
+  const data = useLoaderData();
   return (
     <div>
+     <apiContext.Provider value={data}>
       <Navbar/>
-      <Outlet />
+        <Outlet />
+      </apiContext.Provider>
     </div>
   );
 };

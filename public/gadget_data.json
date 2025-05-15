@@ -1,103 +1,101 @@
-{
-  "gadgets": [
-    {
-      "product_id": 1,
-      "product_title": "iPhone X",
-      "product_image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
-      "category": "Smartphones",
-      "price": 799,
-      "description": "Apple's iPhone X with a 5.8-inch Super Retina display and Face ID.",
-      "specification": ["5.8-inch OLED display", "64GB storage", "Face ID"],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": 2,
-      "product_title": "Samsung Galaxy S9",
-      "product_image": "https://images.unsplash.com/photo-1512499617640-c2f99901822c",
-      "category": "Smartphones",
-      "price": 699,
-      "description": "Samsung Galaxy S9 with a 5.8-inch Infinity Display and dual aperture camera.",
-      "specification": ["5.8-inch AMOLED display", "64GB storage", "12MP camera"],
-      "availability": true,
-      "rating": 4.5
-    },
-    {
-      "product_id": 3,
-      "product_title": "Google Pixel 2",
-      "product_image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-      "category": "Smartphones",
-      "price": 899,
-      "description": "Google Pixel 2 with a 5-inch display and the best-in-class camera.",
-      "specification": ["5-inch OLED display", "128GB storage", "12.2MP camera"],
-      "availability": false,
-      "rating": 4.9
-    },
-    {
-      "product_id": 4,
-      "product_title": "MacBook Pro 15-inch",
-      "product_image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-      "category": "Laptops",
-      "price": 1200,
-      "description": "Apple MacBook Pro with a 15-inch Retina display and Touch Bar.",
-      "specification": ["15-inch Retina display", "16GB RAM", "512GB SSD"],
-      "availability": true,
-      "rating": 4.7
-    },
-    {
-      "product_id": 5,
-      "product_title": "Dell XPS 13",
-      "product_image": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d",
-      "category": "Laptops",
-      "price": 950,
-      "description": "Dell XPS 13 with an InfinityEdge display and lightweight design.",
-      "specification": ["13.3-inch display", "8GB RAM", "256GB SSD"],
-      "availability": true,
-      "rating": 4.4
-    },
-    {
-      "product_id": 6,
-      "product_title": "Razer Blade 15",
-      "product_image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-      "category": "Laptops",
-      "price": 1500,
-      "description": "Razer Blade 15, a high-performance gaming laptop with a sleek design.",
-      "specification": ["15.6-inch display", "32GB RAM", "1TB SSD"],
-      "availability": false,
-      "rating": 4.9
-    },
-    {
-      "product_id": 7,
-      "product_title": "Apple Watch Series 4",
-      "product_image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-      "category": "Smartwatches",
-      "price": 299,
-      "description": "Apple Watch Series 4 with ECG monitoring and fitness tracking.",
-      "specification": ["ECG monitor", "GPS", "Water-resistant"],
-      "availability": true,
-      "rating": 4.6
-    },
-    {
-      "product_id": 8,
-      "product_title": "Samsung Galaxy Watch",
-      "product_image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-      "category": "Smartwatches",
-      "price": 399,
-      "description": "Samsung Galaxy Watch with a rotating bezel and long battery life.",
-      "specification": ["Rotating bezel", "Sleep tracking", "Bluetooth"],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": 9,
-      "product_title": "Fitbit Versa 2",
-      "product_image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-      "category": "Smartwatches",
-      "price": 499,
-      "description": "Fitbit Versa 2 with Alexa built-in and advanced fitness tracking.",
-      "specification": ["AMOLED display", "7-day battery", "Alexa built-in"],
-      "availability": false,
-      "rating": 4.7
-    }
-  ]
-}
+[
+  {
+    "product_id": 1,
+    "product_title": "iPhone X",
+    "product_image": "https://images.unsplash.com/photo-1512053459797-38c3a066cabd?auto=format&fit=crop&w=800",
+    "category": "Smartphones",
+    "price": 799,
+    "description": "Apple's iPhone X with a 5.8-inch Super Retina display and Face ID.",
+    "specification": ["5.8-inch OLED display", "64GB storage", "Face ID"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "Samsung Galaxy S9",
+    "product_image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s9-1.jpg",
+    "category": "Smartphones",
+    "price": 699,
+    "description": "Samsung Galaxy S9 with a 5.8-inch Infinity Display and dual aperture camera.",
+    "specification": ["5.8-inch AMOLED display", "64GB storage", "12MP camera"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 3,
+    "product_title": "Google Pixel 2",
+    "product_image": "https://images.unsplash.com/photo-1505156868547-9b49f4df4e04?auto=format&fit=crop&w=800",
+    "category": "Smartphones",
+    "price": 899,
+    "description": "Google Pixel 2 with a 5-inch display and the best-in-class camera.",
+    "specification": ["5-inch OLED display", "128GB storage", "12.2MP camera"],
+    "availability": false,
+    "rating": 4.9
+  },
+  {
+    "product_id": 4,
+    "product_title": "MacBook Pro 15-inch",
+    "product_image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800",
+    "category": "Laptops",
+    "price": 1200,
+    "description": "Apple MacBook Pro with a 15-inch Retina display and Touch Bar.",
+    "specification": ["15-inch Retina display", "16GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 5,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800",
+    "category": "Laptops",
+    "price": 950,
+    "description": "Dell XPS 13 with an InfinityEdge display and lightweight design.",
+    "specification": ["13.3-inch display", "8GB RAM", "256GB SSD"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 6,
+    "product_title": "Razer Blade 15",
+    "product_image": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=800",
+    "category": "Laptops",
+    "price": 1500,
+    "description": "Razer Blade 15, a high-performance gaming laptop with a sleek design.",
+    "specification": ["15.6-inch display", "32GB RAM", "1TB SSD"],
+    "availability": false,
+    "rating": 4.9
+  },
+  {
+    "product_id": 7,
+    "product_title": "Apple Watch Series 4",
+    "product_image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800",
+    "category": "Smartwatches",
+    "price": 299,
+    "description": "Apple Watch Series 4 with ECG monitoring and fitness tracking.",
+    "specification": ["ECG monitor", "GPS", "Water-resistant"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 8,
+    "product_title": "Samsung Galaxy Watch",
+    "product_image": "https://images.unsplash.com/photo-1558126319-c9feecbf57ee?auto=format&fit=crop&w=800",
+    "category": "Smartwatches",
+    "price": 399,
+    "description": "Samsung Galaxy Watch with a rotating bezel and long battery life.",
+    "specification": ["Rotating bezel", "Sleep tracking", "Bluetooth"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 9,
+    "product_title": "Fitbit Versa 2",
+    "product_image": "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg",
+    "category": "Smartwatches",
+    "price": 499,
+    "description": "Fitbit Versa 2 with Alexa built-in and advanced fitness tracking.",
+    "specification": ["AMOLED display", "7-day battery", "Alexa built-in"],
+    "availability": false,
+    "rating": 4.7
+  }
+]

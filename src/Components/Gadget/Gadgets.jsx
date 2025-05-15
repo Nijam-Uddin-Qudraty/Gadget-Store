@@ -1,10 +1,24 @@
-import React from 'react';
-import Sidebar from './Sidebar';
+import React, { useContext } from 'react';
 
+import Gadget from './Gadget';
+import { apiContext } from '../../root';
+import Sidebar from './Sidebar';
 const Gadgets = () => {
+    // const [gadgets, setGadgets] = useState([]);
+    // const gadgets = useLoaderData();
+    const gadgets = useContext(apiContext);
+    console.log(gadgets);
     return (
-        <div>
-            <h1>gajhlashf</h1>
+        <div className='flex'>
+            <Sidebar></Sidebar>
+            <div>
+                <h1 className="font-semibold text-4xl">Explore Cutting-Edge Gadgets</h1>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 mx-auto'>
+                {
+                gadgets.map(gadget => <Gadget key={gadget.id} gadget={gadget}></Gadget>)
+            }
+            </div>
+            </div>
         </div>
     );
 };

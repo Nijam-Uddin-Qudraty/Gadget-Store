@@ -1,15 +1,29 @@
-import React from 'react';
+
 
 const Sidebar = () => {
-    return (
-        <div>
-            <li>All Product</li>
-            <li>Smartphone</li>
-            <li>SmartWatches</li>
-            <li>Laptop</li>
-            
-        </div>
-    );
+	return (
+		<>
+			
+					<ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+						{/* Sidebar content here */}
+						<li>
+							<a> All Product </a>
+						</li>
+						<li>
+							<a>SmartPhone</a>
+						</li>
+						<li>
+							<a>SmartPhone</a>
+						</li>
+						<li>
+							<a>SmartWatches</a>
+						</li>
+						<li>
+							<a>Laptop</a>
+						</li>
+					</ul>
+				</>
+	);
 };
 
 export default Sidebar;
