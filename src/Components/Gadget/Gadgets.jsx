@@ -9,11 +9,11 @@ const Gadgets = () => {
     const gadgets = useContext(apiContext);
     console.log(gadgets);
     return (
-        <div className='flex'>
+        <div className='flex-row md:flex p-4'>
             <Sidebar></Sidebar>
-            <div>
+            <div className=''>
                 <h1 className="font-semibold text-4xl">Explore Cutting-Edge Gadgets</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 mx-auto'>
+            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 mx-auto '>
                 {
                 gadgets.map(gadget => <Gadget key={gadget.id} gadget={gadget}></Gadget>)
             }
