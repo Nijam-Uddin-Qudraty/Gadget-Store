@@ -9,7 +9,7 @@ const Gadgets = () => {
     const gadgets = useContext(apiContext);
     console.log(gadgets);
     return (
-        <div className='flex-row md:flex p-4'>
+        <div className='flex-row gap-2 md:flex py-4'>
             <Sidebar></Sidebar>
             <div className=''>
                 <h1 className="font-semibold text-4xl">Explore Cutting-Edge Gadgets</h1>

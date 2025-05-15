@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from '../Header/Banner';
+import Banner from './Banner';
 import Gadgets from '../Gadget/Gadgets';
 
 const Home = () => {
