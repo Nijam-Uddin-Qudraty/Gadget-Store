@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       {
         path: "/gadget/:details",
         element: <Gadget_details />,
-        // loader: fetch("gadget_data.json"),
+        loader: ()=>fetch("gadget_data.json"),
       }
       
     ]

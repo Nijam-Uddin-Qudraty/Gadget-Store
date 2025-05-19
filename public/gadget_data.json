@@ -1,8 +1,8 @@
 [
   {
-    "product_id": 1,
-    "product_title": "iPhone X",
-    "product_image": "https://images.unsplash.com/photo-1512053459797-38c3a066cabd?auto=format&fit=crop&w=800",
+    "id": 1,
+    "title": "iPhone X",
+    "image": "https://images.unsplash.com/photo-1512053459797-38c3a066cabd?auto=format&fit=crop&w=800",
     "category": "Smartphones",
     "price": 799,
     "description": "Apple's iPhone X with a 5.8-inch Super Retina display and Face ID.",
@@ -11,9 +11,9 @@
     "rating": 4.8
   },
   {
-    "product_id": 2,
-    "product_title": "Samsung Galaxy S9",
-    "product_image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s9-1.jpg",
+    "id": 2,
+    "title": "Samsung Galaxy S9",
+    "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s9-1.jpg",
     "category": "Smartphones",
     "price": 699,
     "description": "Samsung Galaxy S9 with a 5.8-inch Infinity Display and dual aperture camera.",
@@ -22,9 +22,9 @@
     "rating": 4.5
   },
   {
-    "product_id": 3,
-    "product_title": "Google Pixel 2",
-    "product_image": "https://images.unsplash.com/photo-1505156868547-9b49f4df4e04?auto=format&fit=crop&w=800",
+    "id": 3,
+    "title": "Google Pixel 2",
+    "image": "https://images.unsplash.com/photo-1505156868547-9b49f4df4e04?auto=format&fit=crop&w=800",
     "category": "Smartphones",
     "price": 899,
     "description": "Google Pixel 2 with a 5-inch display and the best-in-class camera.",
@@ -33,9 +33,9 @@
     "rating": 4.9
   },
   {
-    "product_id": 4,
-    "product_title": "MacBook Pro 15-inch",
-    "product_image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800",
+    "id": 4,
+    "title": "MacBook Pro 15-inch",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800",
     "category": "Laptops",
     "price": 1200,
     "description": "Apple MacBook Pro with a 15-inch Retina display and Touch Bar.",
@@ -44,9 +44,9 @@
     "rating": 4.7
   },
   {
-    "product_id": 5,
-    "product_title": "Dell XPS 13",
-    "product_image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800",
+    "id": 5,
+    "title": "Dell XPS 13",
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800",
     "category": "Laptops",
     "price": 950,
     "description": "Dell XPS 13 with an InfinityEdge display and lightweight design.",
@@ -55,9 +55,9 @@
     "rating": 4.4
   },
   {
-    "product_id": 6,
-    "product_title": "Razer Blade 15",
-    "product_image": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=800",
+    "id": 6,
+    "title": "Razer Blade 15",
+    "image": "https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=800",
     "category": "Laptops",
     "price": 1500,
     "description": "Razer Blade 15, a high-performance gaming laptop with a sleek design.",
@@ -66,9 +66,9 @@
     "rating": 4.9
   },
   {
-    "product_id": 7,
-    "product_title": "Apple Watch Series 4",
-    "product_image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800",
+    "id": 7,
+    "title": "Apple Watch Series 4",
+    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800",
     "category": "Smartwatches",
     "price": 299,
     "description": "Apple Watch Series 4 with ECG monitoring and fitness tracking.",
@@ -77,9 +77,9 @@
     "rating": 4.6
   },
   {
-    "product_id": 8,
-    "product_title": "Samsung Galaxy Watch",
-    "product_image": "https://images.unsplash.com/photo-1558126319-c9feecbf57ee?auto=format&fit=crop&w=800",
+    "id": 8,
+    "title": "Samsung Galaxy Watch",
+    "image": "https://images.unsplash.com/photo-1558126319-c9feecbf57ee?auto=format&fit=crop&w=800",
     "category": "Smartwatches",
     "price": 399,
     "description": "Samsung Galaxy Watch with a rotating bezel and long battery life.",
@@ -88,9 +88,9 @@
     "rating": 4.8
   },
   {
-    "product_id": 9,
-    "product_title": "Fitbit Versa 2",
-    "product_image": "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg",
+    "id": 9,
+    "title": "Fitbit Versa 2",
+    "image": "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg",
     "category": "Smartwatches",
     "price": 499,
     "description": "Fitbit Versa 2 with Alexa built-in and advanced fitness tracking.",
