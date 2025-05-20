@@ -17,7 +17,15 @@ const Gadget_details = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg flex flex-col md:flex-row gap-6">
+    <>
+      {/* detal page info */}
+      <div className='w-full h-[463px] bg-primary text-white p-6 text-center'>
+        <h1 className='text-3xl font-bold'>Product Details</h1>
+        <p> Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
+        </p>
+      </div>
+       {/* Gadget details component */}
+       <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg flex flex-col md:flex-row gap-6">
       <div className="md:w-1/2">
         <img src={gadget.image} alt={gadget.title} className="w-full h-auto rounded" />
       </div>
@@ -50,7 +58,8 @@ const Gadget_details = () => {
 
         <button className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Add To Cart</button>
       </div>
-    </div>
+    </div>  
+    </>
   );
 };
 
