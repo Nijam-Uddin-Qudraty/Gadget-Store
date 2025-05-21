@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import Gadget from './Gadget';
-import { apiContext } from '../../root';
+import { apiContext } from '../../Root';
 import Sidebar from './Sidebar';
 const Gadgets = () => {
     // const [gadgets, setGadgets] = useState([]);

@@ -1,20 +1,18 @@
-import React from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
-
+import React, { useContext } from 'react';
+import { IoIosHeartEmpty } from 'react-icons/io';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { SetCartData } from "../../Root";
+import { FaStar } from 'react-icons/fa';
 const Gadget_details = () => {
   const { details } = useParams();
   const data = useLoaderData();
 
   const gadget = data.find(item => item.id?.toString() === details);
 
+  const { cart, setCart, wishlist, setWishlist } = useContext(SetCartData);
   if (!gadget) return <p className="text-center text-red-600">Gadget not found</p>;
 
-  // Generate stars manually
-  const stars = [];
-  const fullStars = Math.floor(gadget.rating);
-  for (let i = 0; i < fullStars; i++) {
-    stars.push(<span key={i}>⭐</span>);
-  }
+
 
   return (
     <>
@@ -51,12 +49,22 @@ const Gadget_details = () => {
         <div className="flex items-center gap-2">
           <span className="font-semibold">Rating:</span>
           <div className="flex items-center gap-1">
-            {stars}
-            <span className="text-gray-600">({gadget.rating})</span>
-          </div>
+    {Array(5).fill(0).map((_, i) => (
+      <FaStar
+        key={i}
+        className={i < Math.round(gadget.rating) ? "text-yellow-400" : "text-gray-300"}
+      />
+    ))}
+    <span className="text-gray-600">({gadget.rating})</span>
+  </div>
         </div>
 
-        <button className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Add To Cart</button>
+            <Link to="/dashboard/cart">
+              <button onClick={() => setCart([...cart, gadget])} className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Add To Cart</button>
+            </Link>
+          <Link to="/dashboard/wishlist">
+            <button onClick={() => setWishlist([...wishlist, gadget])} className="btn rounded-full"><IoIosHeartEmpty></IoIosHeartEmpty> </button>
+          </Link>
       </div>
     </div>  
     </>

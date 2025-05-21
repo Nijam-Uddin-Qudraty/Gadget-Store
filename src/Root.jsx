@@ -1,23 +1,26 @@
-import { Outlet, useLoaderData } from 'react-router';
-import Navbar from './Components/Parent_Sections/Navbar.jsx';
-import { createContext } from 'react';
-import Footer from './Components/Parent_Sections/Footer.jsx';
-// import React, { createContext, useEffect, useState } from 'react';
-export  const apiContext = createContext("data");
-
-const Root = () => {
-  // const [gadgets, setGadgets] = useState([]);
+  import Navbar from './Components/Parent_Sections/Navbar.jsx';
+  import Footer from './Components/Parent_Sections/Footer.jsx';
+  import { createContext,   useState } from 'react';
+  import { Outlet, useLoaderData } from 'react-router';
+  export const SetCartData = createContext();
+  export const apiContext = createContext();
+  const Root = () => {
+    ;
+    const [cart, setCart] = useState([]);
+    const [wishlist, setWishlist] = useState([]);
+    const data = useLoaderData();
   
-  const data = useLoaderData();
-  return (
-    <div>
-     <apiContext.Provider value={data}>
-      <Navbar/>
+    return (
+      <div>
+        <apiContext.Provider value={data}>
+        <SetCartData.Provider value={{ cart, setCart, wishlist, setWishlist }}>
+        <Navbar />
         <Outlet />
-      <Footer/>
-      </apiContext.Provider>
-    </div>
-  );
-};
+        <Footer />
+          </SetCartData.Provider>
+          </apiContext.Provider>
+      </div>
+    );
+  };
 
-export default Root;
+  export default Root;

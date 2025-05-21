@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { SetCartData } from '../../Root';
+import Cart from '../Cart/Cart';
+import Wishlist from '../../Wishlist/Wishlist';
 
 const Dashboard = () => {
     const [activeTab, setActiveTab] = useState('cart');
-
+    
+   
     return (
         <>
             <div className='w-full h-[344px] bg-purple-600 text-white p-6 text-center'>
@@ -41,6 +45,10 @@ const Dashboard = () => {
                     {activeTab === 'wishlist' && <p>This is your Wishlist content.</p>}
                 </div>
             </div>
+            <div className="max-w-4xl mx-auto p-6">
+        {activeTab === 'cart' && <Cart />}
+        {activeTab === 'wishlist' && <Wishlist />}
+      </div>
         </>
     );
 };

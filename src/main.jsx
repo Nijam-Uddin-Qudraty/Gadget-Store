@@ -4,12 +4,14 @@ import './index.css'
 
 import { createBrowserRouter,  } from 'react-router-dom';
 import { RouterProvider } from 'react-router-dom'
-import Root from './root.jsx';
+import Root from './Root.jsx';
 import Home from './Components/Home/Home.jsx';
 
 import ErrorPage from './ErrorPage.jsx';  
 import Gadget_details from './Components/Gadget_details/Gadget_details.jsx';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
+import Cart from './Components/Cart/Cart.jsx';
+import Wishlist from './Wishlist/Wishlist.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +42,7 @@ const router = createBrowserRouter([
         path: "/gadget/:details",
         element: <Gadget_details />,
         loader: ()=>fetch("gadget_data.json"),
-      }
+      },
       
     ]
   },    // <HomePage /> is a component
