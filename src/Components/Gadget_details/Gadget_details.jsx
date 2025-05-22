@@ -9,10 +9,7 @@ const Gadget_details = () => {
 
   const gadget = data.find(item => item.id?.toString() === details);
 
-  const { cart, setCart, wishlist, setWishlist } = useContext(SetCartData);
-  if (!gadget) return <p className="text-center text-red-600">Gadget not found</p>;
-
-
+  const { cart, wishlist, onClickAdd } = useContext(SetCartData);
 
   return (
     <>
@@ -60,11 +57,11 @@ const Gadget_details = () => {
         </div>
 
             
-              <button onClick={() => setCart([...cart, gadget])} className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Add To Cart</button>
-            
-          
-            <button onClick={() => setWishlist([...wishlist, gadget])} className="btn rounded-full"><IoIosHeartEmpty></IoIosHeartEmpty> </button>
-          
+              <button onClick={() => onClickAdd(gadget,"cart")} className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Add To Cart</button>
+
+
+            <button onClick={() => onClickAdd(gadget,"wishlist")} className="btn rounded-full"><IoIosHeartEmpty></IoIosHeartEmpty> </button>
+
       </div>
     </div>  
     </>

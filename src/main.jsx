@@ -10,8 +10,6 @@ import Home from './Components/Home/Home.jsx';
 import ErrorPage from './ErrorPage.jsx';  
 import Gadget_details from './Components/Gadget_details/Gadget_details.jsx';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
-import Cart from './Components/Cart/Cart.jsx';
-import Wishlist from './Wishlist/Wishlist.jsx';
 const router = createBrowserRouter([
   {
     path: "/",

@@ -9,14 +9,53 @@
     const [cart, setCart] = useState([]);
     const [wishlist, setWishlist] = useState([]);
     const data = useLoaderData();
-    
+    const onClickAdd = (gadget,btnName) => {
+      const exist = cart.find((item) => item.id === gadget.id);
+      const existWishlist = wishlist.find((item) => item.id === gadget.id);
+      if (btnName === "cart") {
+        if (existWishlist) { 
+            const newWishlist = wishlist.filter((item) => item.id !== gadget.id);
+            setWishlist([...newWishlist]);
+          }
+        if (exist) {
+          alert("Already in Cart");
+        }
+        else {
+          setCart((prev) => [...prev, gadget]);
+          alert("Added to Cart");
+          }
+      }
+      else {
+        if (exist) {
+          alert("Already in Cart");
+        }
+        else {
+                  if (existWishlist) {
+                alert("Already in Wishlist");
+              }
+              else {
+                setWishlist((prev) => [...prev, gadget]);
+                alert("Added to Wishlist");
+              }
+        }
+        
+      }
+
+      if (exist && existWishlist) {
+        wishlist.filter((item) => item.id !== gadget.id);
+      }
+      // adding item to cart
+     
+      // adding item to wishlist
+      
+    };
     return (
       <div>
         <apiContext.Provider value={data}>
-        <SetCartData.Provider value={{ cart, setCart, wishlist, setWishlist }}>
-        <Navbar />
-        <Outlet />
-        <Footer />
+          <SetCartData.Provider value={{ cart, wishlist, onClickAdd }}>
+            <Navbar />
+            <Outlet />
+            <Footer />
           </SetCartData.Provider>
           </apiContext.Provider>
       </div>

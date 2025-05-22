@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { SetCartData } from '../../Root';
-import Cart from '../Cart/Cart';
-import Wishlist from '../../Wishlist/Wishlist';
+
+import Items from './Items/Items';
 
 const Dashboard = () => {
     const [activeTab, setActiveTab] = useState('cart');
@@ -45,8 +44,8 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className="max-w-4xl mx-auto p-6">
-        {activeTab === 'cart' && <Cart />}
-        {activeTab === 'wishlist' && <Wishlist />}
+        {activeTab === 'cart' && <Items name="cart" />}
+        {activeTab === 'wishlist' && <Items name="wishlist" />}
       </div>
         </>
     );
