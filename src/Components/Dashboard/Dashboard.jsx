@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { SetCartData } from '../../Root';
 import Cart from '../Cart/Cart';
 import Wishlist from '../../Wishlist/Wishlist';
@@ -6,7 +6,6 @@ import Wishlist from '../../Wishlist/Wishlist';
 const Dashboard = () => {
     const [activeTab, setActiveTab] = useState('cart');
     
-   
     return (
         <>
             <div className='w-full h-[344px] bg-purple-600 text-white p-6 text-center'>

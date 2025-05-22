@@ -59,12 +59,12 @@ const Gadget_details = () => {
   </div>
         </div>
 
-            <Link to="/dashboard/cart">
+            
               <button onClick={() => setCart([...cart, gadget])} className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Add To Cart</button>
-            </Link>
-          <Link to="/dashboard/wishlist">
+            
+          
             <button onClick={() => setWishlist([...wishlist, gadget])} className="btn rounded-full"><IoIosHeartEmpty></IoIosHeartEmpty> </button>
-          </Link>
+          
       </div>
     </div>  
     </>

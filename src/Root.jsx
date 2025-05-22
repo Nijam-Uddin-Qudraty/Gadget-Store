@@ -9,7 +9,7 @@
     const [cart, setCart] = useState([]);
     const [wishlist, setWishlist] = useState([]);
     const data = useLoaderData();
-  
+    
     return (
       <div>
         <apiContext.Provider value={data}>
