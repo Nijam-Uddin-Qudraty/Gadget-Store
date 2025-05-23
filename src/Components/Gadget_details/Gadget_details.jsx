@@ -56,8 +56,13 @@ const Gadget_details = () => {
   </div>
         </div>
 
-            
+          {
+            gadget.availability ? (
               <button onClick={() => onClickAdd(gadget,"cart")} className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Add To Cart</button>
+            ) : (
+              <button disabled className="bg-gray-400 text-white px-4 py-2 rounded cursor-not-allowed">Out of Stock</button>
+            )
+            }
 
 
             <button onClick={() => onClickAdd(gadget,"wishlist")} className="btn rounded-full"><IoIosHeartEmpty></IoIosHeartEmpty> </button>
