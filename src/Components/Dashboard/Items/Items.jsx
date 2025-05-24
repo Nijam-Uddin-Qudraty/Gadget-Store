@@ -16,7 +16,7 @@ const Items = ({name}) => {
             </div>
             <div>
             {
-                name==="cart"? <Item gadgets={cart} /> : <Item gadgets={wishlist} />
+                name==="cart"? <Item gadgets={cart} name={name} /> : <Item gadgets={wishlist} name={name} />
             }
         </div>
         </div>
